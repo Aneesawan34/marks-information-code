@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    function obtain()
+    {
+        var Engl = Number(marksheet.Eng.value);
+        var Phys = parseInt(marksheet.Phy.value);
+        var Mathes = +marksheet.Maths.value;
+        var Total = Engl+Phys+Mathes;
+        var percent = (Total/300)*100;
+        var a = alert("your total number is "+Total);
+        alert("your percentage is "+percent);
+    }
+    // var Eng = Number(prompt("Enter English Marks"));
+    // var phy = parseInt(prompt("Enter Physics Marks"));
+    // var Maths = +prompt("Enter Maths Marks");
+    
+</script>
+<body>
+    <form name="marksheet">
+        <label>Enter English Marks : </label>
+        <input type="text" name = "Eng">
+        <br/>
+        <br/>
+        <label>Enter Physics Marks : </label>
+        <input type="text" name ="Phy">
+        <br/>
+        <br/>
+        <label>Enter Maths Marks : </label>
+        <input type="text" name="Maths">
+        <br/>
+        <br/>
+        <input type="submit" value="submit" onclick= obtain()>
+    </form>
+</body>
+</html>
